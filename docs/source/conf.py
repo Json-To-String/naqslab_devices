@@ -1,96 +1,96 @@
-# # Configuration file for the Sphinx documentation builder.
-# #
-# # This file only contains a selection of the most common options. For a full
-# # list see the documentation:
-# # http://www.sphinx-doc.org/en/master/config
+# Configuration file for the Sphinx documentation builder.
+#
+# This file only contains a selection of the most common options. For a full
+# list see the documentation:
+# http://www.sphinx-doc.org/en/master/config
 
-# # -- Path setup --------------------------------------------------------------
+# -- Path setup --------------------------------------------------------------
 
-# # If extensions (or modules to document with autodoc) are in another directory,
-# # add these directories to sys.path here. If the directory is relative to the
-# # documentation root, use os.path.abspath to make it absolute, like shown here.
-# #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('..'))
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+#
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
 
 
-# # -- Project information -----------------------------------------------------
+# -- Project information -----------------------------------------------------
 
-# project = 'naqslab_devices'
-# copyright = '2019, dihm'
-# author = 'dihm'
+project = 'naqslab_devices'
+copyright = '2019, dihm'
+author = 'dihm'
 
-# # # The full version, including alpha/beta/rc tags
-# # from naqslab_devices import __version__
-# # # short version
-# # version = __version__
-# # # long version
-# # release = version
+# The full version, including alpha/beta/rc tags
+from naqslab_devices import __version__
+# short version
+version = __version__
+# long version
+release = version
 
-# # get version into rst files
-# #rst_epilog = '.. |version| replace:: %s' % version
+# get version into rst files
+rst_epilog = '.. |version| replace:: %s' % version
 
 
 # # -- General configuration ---------------------------------------------------
 
-# # Add any Sphinx extension module names here, as strings. They can be
-# # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# # ones.
-# extensions = [
-# 	'sphinx.ext.autodoc',
-# 	'sphinx.ext.napoleon',
-# 	'sphinx.ext.viewcode',
-# 	'sphinx.ext.autosummary',
-# 	'sphinx.ext.intersphinx',
-# 	'sphinx.ext.coverage'
-# ]
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones.
+extensions = [
+	'sphinx.ext.autodoc',
+	'sphinx.ext.napoleon',
+	'sphinx.ext.viewcode',
+	'sphinx.ext.autosummary',
+	'sphinx.ext.intersphinx',
+	'sphinx.ext.coverage'
+]
 
-# # disable viewcode from putting in source for imported libraries
-# viewcode_follow_imported_members = False
+# disable viewcode from putting in source for imported libraries
+viewcode_follow_imported_members = False
 
-# # Add any paths that contain templates here, relative to this directory.
-# templates_path = ['_templates']
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ['_templates']
 
-# # The master toctree document.
-# master_doc = 'index'
+# The master toctree document.
+master_doc = 'index'
 
-# # List of patterns, relative to source directory, that match files and
-# # directories to ignore when looking for source files.
-# # This pattern also affects html_static_path and html_extra_path.
-# exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-# # The suffix(es) of source filenames.
-# # You can specify multiple suffix as a list of string:
-# # source_suffix = ['.rst', '.md']
-# source_suffix = '.rst'
+# The suffix(es) of source filenames.
+# You can specify multiple suffix as a list of string:
+# source_suffix = ['.rst', '.md']
+source_suffix = '.rst'
 
-# # The name of the Pygments (syntax highlighting) style to use.
-# pygments_style = 'sphinx'
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'
 
-# # autosummary
-# #autosummary_generate = False
+# autosummary
+autosummary_generate = False
 
-# autoclass_content = "init" # options: "both", "class", "init"
+autoclass_content = "init" # options: "both", "class", "init"
 
-# autodoc_default_options = {
-# 		"members":True,
-# 		"undoc-members":True,
-# 		"show-inheritance":True,
-# 		"inherited-members":True,
-# 		"member-order":'bysource', # 'alphabetical', 'groupwise', or 'bysource'
-# 		#"private-members":True,
-# 		#"special-members":True,
-# 		#"imported-members":True,
-# 		"exclude-members":''
-# }
+autodoc_default_options = {
+		"members":True,
+		"undoc-members":True,
+		"show-inheritance":True,
+		"inherited-members":True,
+		"member-order":'bysource', # 'alphabetical', 'groupwise', or 'bysource'
+		#"private-members":True,
+		#"special-members":True,
+		#"imported-members":True,
+		"exclude-members":''
+}
 
 # # needs_sphinx = '2.2'
 
-# add_module_names = True
+add_module_names = True
 
-# # If true, `todo` and `todoList` produce output, else they produce nothing.
-# todo_include_todos = True
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = True
 
 # # -- Options for HTML output -------------------------------------------------
 
@@ -164,22 +164,22 @@
 
 # -- Project information
 
-project = 'naqslab_devices'
-copyright = '2025, Json-To-String'
-author = 'Json-To-String'
+# project = 'naqslab_devices'
+# copyright = '2019, dihm'
+# author = 'dihm'
 
-release = '0.1'
-version = '0.1.0'
+# release = '0.1'
+# version = '0.1.0'
 
 # -- General configuration
 
-extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-]
+# extensions = [
+#     'sphinx.ext.duration',
+#     'sphinx.ext.doctest',
+#     'sphinx.ext.autodoc',
+#     'sphinx.ext.autosummary',
+#     'sphinx.ext.intersphinx',
+# ]
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
