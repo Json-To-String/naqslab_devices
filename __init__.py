@@ -20,8 +20,11 @@ __author__ = ['dihm']
 ##############################################
 # define helper sub-classes of labscript defined channels
 
-from labscript import Device, AnalogIn, StaticDDS, LabscriptError
-
+# from labscript import Device, AnalogIn, StaticDDS, LabscriptError
+from labscript.base import Device
+from labscript.inputs import AnalogIn
+from labscript.outputs import StaticDDS
+from labscript.utils import LabscriptError
 
 class ScopeChannel(AnalogIn):
     """Subclass of labscript.AnalogIn that marks an acquiring scope channel.

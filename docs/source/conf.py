@@ -1,5 +1,5 @@
 # Configuration file for the Sphinx documentation builder.
-#
+
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
@@ -9,11 +9,14 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
+
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../..'))
+# sys.path.insert(0, os.path.abspath('..'))
 
+root_dir = os.path.abspath('../../..')
+
+sys.path.insert(0, root_dir)
 
 # -- Project information -----------------------------------------------------
 
@@ -85,81 +88,81 @@ autodoc_default_options = {
 		"exclude-members":''
 }
 
-# # needs_sphinx = '2.2'
+# needs_sphinx = '2.2'
 
 add_module_names = True
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+# todo_include_todos = True
 
-# # -- Options for HTML output -------------------------------------------------
+# -- Options for HTML output -------------------------------------------------
 
-# # The theme to use for HTML and HTML Help pages.  See the documentation for
-# # a list of builtin themes.
-# #
-# #html_theme = 'alabaster'
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+#html_theme = 'alabaster'
 
-# # import sphinx_rtd_theme
+# import sphinx_rtd_theme
 
-# html_theme = "sphinx_rtd_theme"
+html_theme = "sphinx_rtd_theme"
 
-# # html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-# # Add any paths that contain custom static files (such as style sheets) here,
-# # relative to this directory. They are copied after the builtin static files,
-# # so a file named "default.css" will overwrite the builtin "default.css".
-# # html_static_path = ['_static']
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+# html_static_path = ['_static']
 
-# # -- Options for LaTeX output ---------------------------------------------
+# -- Options for LaTeX output ---------------------------------------------
 
-# latex_elements = {
-# # The paper size ('letterpaper' or 'a4paper').
-# 'papersize': 'a4paper',
+latex_elements = {
+# The paper size ('letterpaper' or 'a4paper').
+'papersize': 'a4paper',
 
-# # The font size ('10pt', '11pt' or '12pt').
-# #'pointsize': '10pt',
+# The font size ('10pt', '11pt' or '12pt').
+#'pointsize': '10pt',
 
-# # Additional stuff for the LaTeX preamble.
-# #'preamble': '',
+# Additional stuff for the LaTeX preamble.
+#'preamble': '',
 
-# # Latex figure (float) alignment
-# 'figure_align': 'htbp',
-# }
+# Latex figure (float) alignment
+'figure_align': 'htbp',
+}
 
-# # Grouping the document tree into LaTeX files. List of tuples
-# # (source start file, target name, title,
-# #  author, documentclass [howto, manual, or own class]).
-# #latex_documents = [
-# #    (master_doc, 'naqslab_devices.tex', u'naqslab devices Documentation',
-# #     u'dihm', 'manual'),
-# #]
+# Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title,
+#  author, documentclass [howto, manual, or own class]).
+#latex_documents = [
+#    (master_doc, 'naqslab_devices.tex', u'naqslab devices Documentation',
+#     u'dihm', 'manual'),
+#]
 
-# # The name of an image file (relative to this directory) to place at the top of
-# # the title page.
-# #latex_logo = None
+# The name of an image file (relative to this directory) to place at the top of
+# the title page.
+#latex_logo = None
 
-# # For "manual" documents, if this is true, then toplevel headings are parts,
-# # not chapters.
-# #latex_use_parts = False
+# For "manual" documents, if this is true, then toplevel headings are parts,
+# not chapters.
+#latex_use_parts = False
 
-# # If true, show page references after internal links.
-# #latex_show_pagerefs = False
+# If true, show page references after internal links.
+#latex_show_pagerefs = False
 
-# # If true, show URL addresses after external links.
-# #latex_show_urls = False
+# If true, show URL addresses after external links.
+#latex_show_urls = False
 
-# # Documents to append as an appendix to all manuals.
-# #latex_appendices = []
+# Documents to append as an appendix to all manuals.
+#latex_appendices = []
 
-# # If false, no module index is generated.
-# #latex_domain_indices = True
+# If false, no module index is generated.
+#latex_domain_indices = True
 
-# # -- Intersphinx Options --------------------------------------------------
+# -- Intersphinx Options --------------------------------------------------
 
-# # configure intersphinx to attempt auto-lookup of objects inventory.
-# # If it fails, use local cached copy.
-# intersphinx_mapping = {'pyvisa':('https://pyvisa.readthedocs.io/en/latest/',(None,'_inv/pyvisa-objects.inv')),
-# 					   'sphinx':('http://www.sphinx-doc.org/en/master/',(None,'_inv/sphinx-objects.inv'))}
+# configure intersphinx to attempt auto-lookup of objects inventory.
+# If it fails, use local cached copy.
+intersphinx_mapping = {'pyvisa':('https://pyvisa.readthedocs.io/en/latest/',(None,'_inv/pyvisa-objects.inv')),
+					   'sphinx':('http://www.sphinx-doc.org/en/master/',(None,'_inv/sphinx-objects.inv'))}
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
@@ -171,7 +174,7 @@ todo_include_todos = True
 # release = '0.1'
 # version = '0.1.0'
 
-# -- General configuration
+# # -- General configuration
 
 # extensions = [
 #     'sphinx.ext.duration',
@@ -181,17 +184,17 @@ todo_include_todos = True
 #     'sphinx.ext.intersphinx',
 # ]
 
-intersphinx_mapping = {
-    'python': ('https://docs.python.org/3/', None),
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
-}
-intersphinx_disabled_domains = ['std']
+# intersphinx_mapping = {
+#     'python': ('https://docs.python.org/3/', None),
+#     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+# }
+# intersphinx_disabled_domains = ['std']
 
-templates_path = ['_templates']
+# templates_path = ['_templates']
 
-# -- Options for HTML output
+# # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
 
-# -- Options for EPUB output
-epub_show_urls = 'footnote'
+# # -- Options for EPUB output
+# epub_show_urls = 'footnote'
