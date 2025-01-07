@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme = "release-branch-semver"
+local_scheme = "no-local-version"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages]
+find = {namespaces = false}
+
+[project]
+name = "naqslab_devices"
+description = "Collection of 3rd party devices for the labscript suite experimental control system"
+authors = [{name = "Jason Pruitt", email = "pruitt.jason8164@gmail.com"}]
+dynamic = ["version", "description"]

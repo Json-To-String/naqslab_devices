@@ -12,9 +12,9 @@ set BUILDDIR=_build
 
 if "%1" == "" goto help
 
-if "%1" == "apidoc" goto apidoc
+@REM if "%1" == "apidoc" goto apidoc
 
-if "%1" == "clean" goto clean
+@REM if "%1" == "clean" goto clean
 
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (
@@ -35,11 +35,11 @@ goto end
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 
-:apidoc
-sphinx-apidoc .. -TMEf --templatedir=_templates -s inc -o .\_apidoc
+@REM :apidoc
+@REM sphinx-apidoc .. -TMEf --templatedir=_templates -s inc -o .\_apidoc
 
-:clean
-rmdir /s /q _build
+@REM :clean
+@REM rmdir /s /q _build
 
 :end
 popd
