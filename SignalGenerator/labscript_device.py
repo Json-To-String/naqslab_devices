@@ -12,7 +12,9 @@
 import numpy as np
 
 from naqslab_devices.VISA.labscript_device import VISA
-from labscript import LabscriptError, set_passed_properties, config
+# from labscript import LabscriptError, set_passed_properties, config
+from labscript import set_passed_properties, config
+from labscript.utils import LabscriptError
 from labscript_utils import dedent
 
 from naqslab_devices import StaticFreqAmp

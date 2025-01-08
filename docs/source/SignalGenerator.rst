@@ -10,7 +10,7 @@ communication protocol.
 
 .. autosummary::
 	 naqslab_devices.SignalGenerator.Models
-	 naqslab_devices.SignalGenerator.blacs_tab
+    naqslab_devices.SignalGenerator.blacs_tab
 	 naqslab_devices.SignalGenerator.blacs_worker
 	 naqslab_devices.SignalGenerator.labscript_device
 	 naqslab_devices.SignalGenerator.register_classes

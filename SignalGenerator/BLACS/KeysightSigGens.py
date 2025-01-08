@@ -13,7 +13,7 @@ from naqslab_devices.SignalGenerator.blacs_tab import SignalGeneratorTab
 from naqslab_devices.SignalGenerator.blacs_worker import SignalGeneratorWorker
 
 from labscript_utils import check_version, dedent
-from labscript import LabscriptError
+from labscript.utils import LabscriptError
 
 # need this version to ensure labscript device properties are auto-passed to worker
 check_version('blacs','2.8.0','4')

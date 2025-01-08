@@ -11,7 +11,7 @@
 #####################################################################
 from naqslab_devices.SignalGenerator.blacs_tab import SignalGeneratorTab
 from naqslab_devices.SignalGenerator.blacs_worker import SignalGeneratorWorker, enable_on_off_formatter
-from labscript import LabscriptError
+from labscript.utils import LabscriptError
 from labscript_utils import dedent
 
 class HP_8648ATab(SignalGeneratorTab):

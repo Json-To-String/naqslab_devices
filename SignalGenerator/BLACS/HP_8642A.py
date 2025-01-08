@@ -11,7 +11,7 @@
 #####################################################################
 from naqslab_devices.SignalGenerator.blacs_tab import SignalGeneratorTab
 from naqslab_devices.SignalGenerator.blacs_worker import SignalGeneratorWorker
-from labscript import LabscriptError
+from labscript.utils import LabscriptError
 import numpy as np
 
 
